@@ -10,6 +10,10 @@ public class CountDownBuilder {
 
     private static HashMap<String, CountDownTimer> timers = new HashMap<>();
 
+    public CountDownBuilder() {
+
+    }
+
     public CountDownTimer create(String tag) {
         if (timers.containsKey(tag)) {
             return timers.get(tag);
